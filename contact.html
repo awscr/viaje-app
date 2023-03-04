@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/07e3f1840c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <a href="index.html" class="header__container__logo">viaje</a>
+      </div>
+
+      <nav class="header__nav">
+        <div class="header__nav__list">
+          <a href="index.html" class="header__nav__list__item underline"
+            >Home</a
+          >
+          <a href="contact.html" class="header__nav__list__item underline"
+            >Contact us</a
+          >
+          <a id="signUp" class="header__nav__list__item underline">Sign up</a>
+          <a id="signIn" class="header__nav__list__item underline">Sign in</a>
+        </div>
+      </nav>
+
+      <div class="menu-wrap">
+        <input type="checkbox" class="toggler" />
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li>
+                  <a href="index.html" class="header__nav__list__item underline"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="contact.html"
+                    class="header__nav__list__item underline"
+                    >Contact us</a
+                  >
+                </li>
+                <li>
+                  <a id="signUp" class="header__nav__list__item underline"
+                    >Sign up</a
+                  >
+                </li>
+                <li>
+                  <a id="signIn" class="header__nav__list__item underline"
+                    >Sign in</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+      <div class="contact">
+      <div class="contact__head">
+        <h1 class="contact__head__heading">Get in touch</h1>
+        <p class="contact__head__note">
+          Don't see your city? Have questions? Anything else? Send us
+          an email!
+        </p>
+      </div>
+
+      <form class="contact__form">
+        <input
+          class="contact__form__item"
+          type="text"
+          name="firstName"
+          placeholder="First Name"
+        />
+        <input
+          class="contact__form__item"
+          type="text"
+          name="lastName"
+          placeholder="Last Name"
+        />
+        <input
+          class="contact__form__item"
+          type="email"
+          name="email"
+          placeholder="What's your email?"
+        />
+        <textarea
+          class="contact__form__item contact__form__description"
+          name="description"
+          cols="30"
+          rows="10"
+          placeholder="Description"
+        ></textarea>
+        <input class="submit" type="submit" name="submit" />
+      </form>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__group">
+        <a class="footer__group__link" href="#" onclick="return false;">Company</a>
+        <a class="footer__group__link" href="contact.html">Contact us</a>
+        <a class="footer__group__link" href="#" onclick="return false;">Careers</a>
+        <a class="footer__group__link" href="#" onclick="return false;">Privacy Policy</a>
+      </div>
+
+      <div class="footer__group">
+        <a class="footer__group__link" href="#" onclick="return false;"><i class="fab fa-facebook"></i> Facebook</a>
+        <a class="footer__group__link" href="#" onclick="return false;"><i class="fab fa-twitter"></i> Twitter</a>
+        <a class="footer__group__link" href="#" onclick="return false;"><i class="fab fa-youtube"></i> YouTube</a>
+        <a class="footer__group__link" href="#" onclick="return false;"><i class="fas fa-blog"></i> Blog</a>
+      </div>
+
+      <small class="footer__copyright">&copy; Copyright <span id="footer__date"></span> Awscr. All Rights Reserved</small>
+    </footer>
+
+    <!-- Sign Up Modal -->
+    <div class="modal-container" id="signUpModal">
+      <div class="modal">
+        <button class="modal__close" id="close">
+          <i class="fa fa-times"></i>
+        </button>
+        <div class="modal__header">
+          <h3>Sign up</h3>
+        </div>
+        <div class="modal__content">
+          <p>Register with us to receive special features, offers and more.</p>
+          <form class="modal__content__form">
+            <div>
+              <label for="name">Name</label>
+              <input
+                class="form-input"
+                type="name"
+                id="name"
+                placeholder="Enter Name"
+              />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input
+                class="form-input"
+                type="email"
+                id="email"
+                placeholder="Enter Email"
+              />
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input
+                class="form-input"
+                type="password"
+                id="password"
+                placeholder="Enter Password"
+              />
+            </div>
+            <div>
+              <label for="password2">Confirm Password</label>
+              <input
+                class="form-input"
+                type="password"
+                id="password2"
+                placeholder="Confirm Password"
+              />
+            </div>
+            <input
+              type="submit"
+              value="Sign up"
+              class="modal__content__form__sign"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sign In Modal -->
+    <div class="modal-container" id="signInModal">
+      <div class="modal">
+        <button class="modal__close" id="close">
+          <i class="fa fa-times"></i>
+        </button>
+        <div class="modal__header">
+          <h3>Sign in</h3>
+        </div>
+        <div class="modal__content">
+          <p>
+            Sign in to access your Viaje account.
+          </p>
+          <form class="modal__content__form">
+            <div>
+              <label for="email">Email</label>
+              <input
+                class="form-input"
+                type="email"
+                id="email"
+                placeholder="Enter Email"
+              />
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input
+                class="form-input"
+                type="password"
+                id="password"
+                placeholder="Enter Password"
+              />
+            </div>
+            <input
+              type="submit"
+              value="Sign in"
+              class="modal__content__form__sign"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="modal.js"></script>
+  </body>
+</html>

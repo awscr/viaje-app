@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/07e3f1840c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Viaje</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <a href="index.html" class="header__container__logo">viaje</a>
+      </div>
+
+      <nav class="header__nav">
+        <div class="header__nav__list">
+          <a href="index.html" class="header__nav__list__item underline"
+            >Home</a
+          >
+          <a href="contact.html" class="header__nav__list__item underline"
+            >Contact us</a
+          >
+          <a id="signUp" class="header__nav__list__item underline"
+            >Sign up</a
+          >
+          <a id="signIn" class="header__nav__list__item underline"
+            >Sign in</a
+          >
+        </div>
+      </nav>
+
+      <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li><a href="index.html" class="header__nav__list__item underline"
+                  >Home</a
+                ></li>
+                <li><a href="contact.html" class="header__nav__list__item underline"
+                  >Contact us</a
+                ></li>
+                <li><a id="signUp" class="header__nav__list__item underline"
+                  >Sign up</a
+                ></li>
+                <li><a id="signIn" class="header__nav__list__item underline"
+                  >Sign in</a
+                ></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="showcase">
+      <div class="showcase__carousel">
+        <div class="showcase__carousel__slide current">
+          <div class="showcase__carousel__slide__content">
+            <h1>San Francisco</h1>
+            <p>
+              "Everybody’s Favorite City," a title earned by its scenic beauty, cultural attractions, diverse communities, and world-class cuisine
+            </p>
+          </div>
+        </div>
+        <div class="showcase__carousel__slide">
+          <div class="showcase__carousel__slide__content">
+            <h1>Santa Monica</h1>
+            <p>
+              An acclaimed beach city that is close to many other Los Angeles attractions
+            </p>
+          </div>
+        </div>
+        <div class="showcase__carousel__slide">
+          <div class="showcase__carousel__slide__content">
+            <h1>Los Angeles</h1>
+            <p>
+              The entertainment capital of the world, with an endless amount of things to do
+            </p>
+          </div>
+        </div>
+        <div class="showcase__carousel__slide">
+          <div class="showcase__carousel__slide__content">
+            <h1>Yosemite</h1>
+            <p>
+              Located in the heart of California, take a journey through nature with its 'hanging' valleys, many waterfalls, and much more
+            </p>
+          </div>
+        </div>
+        <div class="showcase__carousel__buttons">
+          <button id="prev"><i class="fas fa-arrow-left"></i></button>
+          <button id="next"><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <div style="text-align: center;">
+        <input
+        id="search"
+        type="search"
+        placeholder="Enter a city"
+      />
+    </div>
+
+      <section class="cities">
+        <div class="cities__row">
+          <div id ="sanFrancisco" class="cities__row__card">
+            <img class="cities__row__card__img" src="img/San_Francisco_Img.jpg" alt="San Francisco">
+
+            <div class="cities__row__card__content">
+              <h2 class="cities__row__card__content__title">San Francisco</h2>
+              <p class="cities__row__card__content__description">
+                San Francisco is often called "Everybody’s Favorite City," a title earned by its impressive scenery, cultural attractions, diversity, and world-class cuisine. San Francisco is filled with some of the best landmarks in the world like the Golden Gate Bridge.
+              </p>
+            </div>
+
+            <a class="discover-btn underline" href="sanfrancisco.html">Discover</a>
+          </div>
+
+          <div class="cities__row__card">
+            <img class="cities__row__card__img" src="img/Santa_Monica_Img.jpg" alt="Santa Monica">
+
+            <div class="cities__row__card__content">
+              <h2 class="cities__row__card__content__title">Santa Monica</h2>
+              <p class="cities__row__card__content__description">
+                Santa Monica is an acclaimed beach city that is close to many other Los Angeles attractions. The Santa Monica Beach alone is the reason why many choose to visit Santa Monica, offering some of the best sunsets on the West Coast.
+              </p>
+            </div>
+
+            <a class="discover-btn underline" href="santamonica.html">Discover</a>
+          </div>
+
+          <div class="cities__row__card">
+            <img class="cities__row__card__img" src="img/Los_Angeles_Img.jpg" alt="Los Angeles">
+
+            <div class="cities__row__card__content">
+              <h2 class="cities__row__card__content__title">Los Angeles</h2>
+              <p class="cities__row__card__content__description">
+                Known as the entertainment capital of the world, L.A has many things to do. You've definitely seen the beauty of L.A in many T.V shows and movies, but there is nothing like taking a journey in one of the biggest cities of California. 
+              </p>
+            </div>
+
+            <a class="discover-btn underline" href="losangeles.html">Discover</a>
+          </div>
+
+          <div class="cities__row__card">
+            <img class="cities__row__card__img" src="img/Yosemite_Img.jpg" alt="Yosemite">
+
+            <div class="cities__row__card__content">
+              <h2 class="cities__row__card__content__title">Yosemite</h2>
+              <p class="cities__row__card__content__description">
+                Yosemite National Park lies in the heart of California. With its 'hanging' valleys, many waterfalls, cirque lakes, polished domes, moraines and U-shaped valleys, it provides an excellent overview of all kinds of granite relief fashioned by glaciation
+              </p>
+            </div>
+
+            <a class="discover-btn underline" href="yosemite.html">Discover</a>
+          </div>
+
+          <div class="cities__row__card">
+            <img class="cities__row__card__img" src="img/Sacramento_Img.jpg" alt="Sacramento">
+
+            <div class="cities__row__card__content">
+              <h2 class="cities__row__card__content__title">Sacramento</h2>
+              <p class="cities__row__card__content__description">
+                Sacramento is the capital of California and the 5th largest city in the state. It is located in north/central California, approximately an hour and a half northeast of Oakland and San Francisco. There are so many things to do in the city of trees!
+              </p>
+            </div>
+
+            <a class="discover-btn underline" href="sacramento.html">Discover</a>
+          </div>
+
+          <div class="cities__row__card">
+            <img class="cities__row__card__img" src="img/San_Diego_Img.jpg" alt="San Diego">
+
+            <div class="cities__row__card__content">
+              <h2 class="cities__row__card__content__title">San Diego</h2>
+              <p class="cities__row__card__content__description">
+                Located on the coast of the Pacific Ocean, San Diego is widely known as “America’s Finest City.” Famous for its miles and miles of white-sand beaches and amazing weather, the city offers an abundance of fun attractions for visitors of all ages.
+              </p>
+            </div>
+
+            <a class="discover-btn underline" href="sandiego.html">Discover</a>
+          </div>
+
+          <div class="cities__row__card">
+            <img class="cities__row__card__img" src="img/Lake_Tahoe_Image.jpg" alt="Lake Tahoe">
+
+            <div class="cities__row__card__content">
+              <h2 class="cities__row__card__content__title">Lake Tahoe</h2>
+              <p class="cities__row__card__content__description">
+                Lake Tahoe, the clear, cobalt blue lake tucked into the snowy Sierra Nevada mountain range, welcomes athletes, adventurers and casual travelers to its easygoing and pine-scented atmosphere. Lake Tahoe is a long sought-after vacation destination.
+              </p>
+            </div>
+
+            <a class="discover-btn underline" href="laketahoe.html">Discover</a>
+          </div>
+
+          <div class="cities__row__card">
+            <img class="cities__row__card__img" src="img/San_Jose_Image.jpg" alt="San Jose">
+
+            <div class="cities__row__card__content">
+              <h2 class="cities__row__card__content__title">San Jose</h2>
+              <p class="cities__row__card__content__description">
+                Nicknamed the capital of Silicon Valley, San Jose is a diverse area with an innovative spirit. While it has a distinct downtown, San Jose is a sprawling metro area that is as much defined by its suburban neighborhoods and large tech campuses as it is by the high-rises in its business district.
+              </p>
+            </div>
+
+            <a class="discover-btn underline" href="sanjose.html">Discover</a>
+          </div>
+
+          <div class="cities__row__card">
+            <img class="cities__row__card__img" src="img/Anaheim_Image.jpg" alt="Anaheim">
+
+            <div class="cities__row__card__content">
+              <h2 class="cities__row__card__content__title">Anaheim</h2>
+              <p class="cities__row__card__content__description">
+                As a city built on imagination, Anaheim is where every unique and personal experience is sure to delight and inspire, how can you miss out on the perfect experience of taking a stroll through the wonderful city of Anaheim, one of the most visited cities in California.
+              </p>
+            </div>
+
+            <a class="discover-btn underline" href="anaheim.html">Discover</a>
+          </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__group">
+        <a class="footer__group__link" href="#" onclick="return false;">Company</a>
+        <a class="footer__group__link" href="contact.html">Contact us</a>
+        <a class="footer__group__link" href="#" onclick="return false;">Careers</a>
+        <a class="footer__group__link" href="#" onclick="return false;">Privacy Policy</a>
+      </div>
+
+      <div class="footer__group">
+        <a class="footer__group__link" href="#" onclick="return false;"><i class="fab fa-facebook"></i> Facebook</a>
+        <a class="footer__group__link" href="#" onclick="return false;"><i class="fab fa-twitter"></i> Twitter</a>
+        <a class="footer__group__link" href="#" onclick="return false;"><i class="fab fa-youtube"></i> YouTube</a>
+        <a class="footer__group__link" href="#" onclick="return false;"><i class="fas fa-blog"></i> Blog</a>
+      </div>
+
+      <small class="footer__copyright">&copy; Copyright <span id="footer__date"></span> Awscr. All Rights Reserved</small>
+    </footer>
+
+    <!-- Sign Up Modal -->
+    <div class="modal-container" id="signUpModal">
+      <div class="modal">
+        <button class="modal__close" id="close">
+          <i class="fa fa-times"></i>
+        </button>
+        <div class="modal__header">
+          <h3>Sign up</h3>
+        </div>
+        <div class="modal__content">
+          <p>Register with us to receive special features, offers and more.</p>
+          <form class="modal__content__form">
+            <div>
+              <label for="name">Name</label>
+              <input
+                class="form-input"
+                type="name"
+                id="name"
+                placeholder="Enter Name"
+              />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input
+                class="form-input"
+                type="email"
+                id="email"
+                placeholder="Enter Email"
+              />
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input
+                class="form-input"
+                type="password"
+                id="password"
+                placeholder="Enter Password"
+              />
+            </div>
+            <div>
+              <label for="password2">Confirm Password</label>
+              <input
+                class="form-input"
+                type="password"
+                id="password2"
+                placeholder="Confirm Password"
+              />
+            </div>
+            <input
+              type="submit"
+              value="Sign up"
+              class="modal__content__form__sign"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sign In Modal -->
+    <div class="modal-container" id="signInModal">
+      <div class="modal">
+        <button class="modal__close" id="close">
+          <i class="fa fa-times"></i>
+        </button>
+        <div class="modal__header">
+          <h3>Sign in</h3>
+        </div>
+        <div class="modal__content">
+          <p>
+            Sign in to access your Viaje account.
+          </p>
+          <form class="modal__content__form">
+            <div>
+              <label for="email">Email</label>
+              <input
+                class="form-input"
+                type="email"
+                id="email"
+                placeholder="Enter Email"
+              />
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input
+                class="form-input"
+                type="password"
+                id="password"
+                placeholder="Enter Password"
+              />
+            </div>
+            <input
+              type="submit"
+              value="Sign in"
+              class="modal__content__form__sign"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="modal.js"></script>
+  </body>
+</html>
